@@ -44,12 +44,6 @@ form.addEventListener("submit", function (e) {
   form.reset();
 });
 
-// Admin access
-const adminPassword = prompt("Admin access required:");
-if (adminPassword === "dockadmin123") {
-  adminPanel.style.display = "block";
-}
-
 // Clear all threads (ADMIN)
 document.addEventListener("keydown", function (e) {
   // Ctrl + Shift + A opens admin panel

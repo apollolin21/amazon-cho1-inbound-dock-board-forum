@@ -51,12 +51,15 @@ if (adminPassword === "dockadmin123") {
 }
 
 // Clear all threads (ADMIN)
-clearBtn.addEventListener("click", async function () {
-  const confirmClear = confirm("Delete all threads?");
-  if (!confirmClear) return;
-
-  const snapshot = await threadsRef.get();
-  snapshot.forEach((doc) => doc.ref.delete());
-
-  alert("All threads cleared.");
+document.addEventListener("keydown", function (e) {
+  // Ctrl + Shift + A opens admin panel
+  if (e.ctrlKey && e.shiftKey && e.key === "A") {
+    const password = prompt("Admin password:");
+    if (password === "dockadmin123") {
+      adminPanel.style.display = "block";
+      alert("Admin mode enabled");
+    } else {
+      alert("Incorrect password");
+    }
+  }
 });

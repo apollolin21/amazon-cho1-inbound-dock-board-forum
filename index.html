@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Dock Board</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The Dock Board</h1>
+      <p>
+        Anonymous forum for safety, operations, and equipment concerns. No
+        accounts. No names.
+      </p>
+    </header>
+
+    <main class="container">
+      <!-- New Thread Form -->
+      <section class="new-thread">
+        <h2>Post a New Thread</h2>
+
+        <form id="thread-form">
+          <label for="category">Category</label>
+          <select id="category">
+            <option value="Safety">Safety</option>
+            <option value="Operations">Operations</option>
+            <option value="General">General</option>
+          </select>
+
+          <label for="body">Message</label>
+          <textarea
+            id="body"
+            placeholder="Describe the concern or issue"
+          ></textarea>
+
+          <button type="submit">Post</button>
+        </form>
+      </section>
+
+      <!-- Thread List -->
+      <h2 class="threadh">Threads</h2>
+      <section class="thread-list"></section>
+    </main>
+
+    <div class="admin-panel">
+      <button class="clearbtn">Clear All Threads</button>
+    </div>
+    <!-- Firebase core -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyCp2qtTo63rfKB_0OgM8Ly2rUNMNigcHd0",
+        authDomain: "dock-board.firebaseapp.com",
+        projectId: "dock-board",
+        storageBucket: "dock-board.firebasestorage.app",
+        messagingSenderId: "67398917846",
+        appId: "1:67398917846:web:6352416cf1a4c363b37377",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

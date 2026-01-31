@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+header p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* New Thread Form */
+.new-thread {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.new-thread h2 {
+  margin-bottom: 1rem;
+}
+
+.new-thread form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.new-thread label {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.new-thread select,
+.new-thread textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-thread textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.new-thread button {
+  width: fit-content;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background: #0073e6;
+  color: white;
+  cursor: pointer;
+}
+
+.new-thread button:hover {
+  background: #005bb5;
+}
+
+/* Thread List */
+.thread-list h2 {
+  margin-bottom: 1rem;
+}
+
+/* Thread Card */
+.threadh {
+    margin-bottom: 1rem;
+}
+
+.thread {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.thread-category {
+  font-size: 0.8rem;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.thread p {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.admin-panel {
+  display: none;
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.clearbtn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background: #c0392b;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.clearbtn:hover {
+  background: #a93226;
+}
+

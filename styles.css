@@ -17,6 +17,10 @@ header {
   text-align: center;
 }
 
+.headtxt {
+  margin-bottom: 5px;
+}
+
 header p {
   color: #555;
   font-size: 0.95rem;
